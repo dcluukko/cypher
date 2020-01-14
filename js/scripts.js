@@ -1,11 +1,15 @@
 $(document).ready(function() {
   
-    var sent = prompt("Enter a sentence...")
-
-    var firstLastCap = (sent.charAt(0).toUpperCase() + sent.charAt(sent.length-1).toUpperCase()) 
-      alert(firstLastCap)
-        
+  
+    var dana = function (sent) {
+      var firstLastCap = (sent.charAt(sent.length-1).toUpperCase() + sent.charAt(0).toUpperCase());
+      return firstLastCap;
+    };
     
+    var userSent = prompt("Enter a sentence...");
+    alert(dana(userSent));
+
+
 
 });
 
